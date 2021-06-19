@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Depression Classifier</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    </head>
+    <body>
+        <div class="container pt-3">
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Sentence</label>
+                <input id="sentence_sentiment" name="sentence_sentiment" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">Input sentence sentiment</div>
+            </div>
+            <button id="sentiment_btn" type="submit" class="btn btn-primary" onclick="call_sentiment()">Submit</button>
+        </div>
+
+        <div class="container pt-6">
+            <br/>
+            <div class="mb-3" id="result">
+            </div>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+        <script src="{{url_for('static', filename='index.js')}}"></script>
+    </body>
+</html>
